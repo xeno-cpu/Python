@@ -1,4 +1,4 @@
-90# in take mask of 6 subject  
+# in take mask of 6 subject  
 marks = []
 for i in range(6):
     mark = float(input(f"Enter marks for subject {i+1}: "))
