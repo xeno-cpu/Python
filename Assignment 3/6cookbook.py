@@ -1,6 +1,7 @@
 '''
- Manages a collection of Dish objects using a Cookbook class.
+Manages a collection of Dish objects using a Cookbook class.
 '''
+
 class Dish:
     def __init__(self, dish_id, dish_name, ingredients, instructions):
         self.dish_id = dish_id
@@ -21,9 +22,14 @@ class Cookbook:
             print(f"Ingredients: {d.ingredients}")
             print(f"Instructions: {d.instructions}\n")
 
+
 # Example Usage
 if __name__ == "__main__":
     my_cb = Cookbook()
-    d1 = Dish(101, "Pasta", "Water, Flour, Salt", "Boil and mix.")
+    
+    # Changed dish to Dal Bhat
+    d1 = Dish("D002", "Dal Bhat", "Rice, Lentils, Spinach, Onion, Garlic, Spices", 
+              "Boil rice. Cook lentils with spices and tarka. Serve hot with pickle.")
+    
     my_cb.add_dish(d1)
     my_cb.show_all()
